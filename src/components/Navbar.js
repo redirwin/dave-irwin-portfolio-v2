@@ -20,11 +20,6 @@ function Navbar() {
           </li>
         </ul>
       </nav>
-      <div className="social-icons">
-        <span>LI</span>
-        <span>GH</span>
-        <span>TW</span>
-      </div>
     </NavbarWrapper>
   );
 }
@@ -41,27 +36,21 @@ const NavbarWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   color: white;
-  /* border: 1px solid white; */
 
   ul {
     height: 3rem;
     list-style: none;
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     margin: 0;
     padding: 0;
     width: 50vw;
-    /* border: 1px solid white; */
     a {
       text-decoration: none;
       color: white;
       margin: 0;
       padding: 1.5rem;
-      /* border: 1px solid white; */
+      font-size: 1.25rem;
     }
-  }
-  .social-icons {
-    display: none;
   }
 `;
