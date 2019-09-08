@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-import About from "./About";
+import Intro from "./Intro";
 
 function Header() {
   return (
     <HeaderWrapper className="header-wrapper">
-      <About />
+      <Intro />
     </HeaderWrapper>
   );
 }
