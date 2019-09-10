@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 function About() {
   return (
-    <AboutWrapper>
+    <AboutWrapper id="about">
       <div className="internal-section-wrapper">
         <h3>About Me</h3>
         <p>

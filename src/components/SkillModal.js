@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-// import background from "../assets/excalibur2.jpg"
-
 function SkillModal({ title, text }) {
   return (
     <SkillModalWrapper className="modal">
@@ -21,8 +19,8 @@ const SkillModalWrapper = styled.section`
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(34, 63, 82, 1);
-  /* background-color: white; */
-  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2),
+    0 6px 20px 0 rgba(255, 255, 255, 0.19);
   color: white;
   border: 1px solid white;
   width: 60%;
