@@ -5,16 +5,16 @@ function PageLinks() {
   return (
     <LinkList>
       <li>
-        <a href="#about">About</a>
+        <a href="#about">ABOUT</a>
       </li>
       <li>
-        <a href="#skills">Skills</a>
+        <a href="#skills">SKILLS</a>
       </li>
       <li>
-        <a href="#projects">Projects</a>
+        <a href="#projects">PROJECTS</a>
       </li>
       <li>
-        <a href="#contact">Contact</a>
+        <a href="#contact">CONTACT</a>
       </li>
     </LinkList>
   );

@@ -12,8 +12,8 @@ function Intro() {
         <img src={dave} alt="Dave Irwin"></img>
       </div>
       <p>
-        I'm a full-stack developer and web wizard.<br></br>I blend creative
-        technology into works of magic.
+        I'm a full-stack developer and web wizard.<br></br>I blend technologies
+        into creative works of magic.
       </p>
       <HeroNav />
     </IntroWrapper>

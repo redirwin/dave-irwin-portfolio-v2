@@ -14,7 +14,6 @@ function Header() {
 export default Header;
 
 const HeaderWrapper = styled.header`
-  /* background-image: url("../assets/excalibur2.jpg"); */
   height: 600px;
   background-position: center;
   background-repeat: no-repeat;
