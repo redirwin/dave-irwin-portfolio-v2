@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   faHtml5,
   faCss3Alt,
@@ -30,6 +30,7 @@ function SkillCards({ skillText, defaultText }) {
         }}
       >
         <FontAwesomeIcon icon={faHtml5} size="1x" className="card-icon" />
+        <p>HTML</p>
       </div>
       <div
         className="card-wrapper"
@@ -41,17 +42,19 @@ function SkillCards({ skillText, defaultText }) {
         }}
       >
         <FontAwesomeIcon icon={faCss3Alt} size="1x" className="card-icon" />
+        <p>CSS</p>
       </div>
       <div
         className="card-wrapper"
         onMouseEnter={() => {
-          skillText("Design Frameworks");
+          skillText("Design");
         }}
         onMouseLeave={() => {
           defaultText();
         }}
       >
         <FontAwesomeIcon icon={faBootstrap} size="1x" className="card-icon" />
+        <p>Design</p>
       </div>
       <div
         className="card-wrapper"
@@ -63,17 +66,19 @@ function SkillCards({ skillText, defaultText }) {
         }}
       >
         <FontAwesomeIcon icon={faJsSquare} size="1x" className="card-icon" />
+        <p>JavaScript</p>
       </div>
       <div
         className="card-wrapper"
         onMouseEnter={() => {
-          skillText("User Interfaces");
+          skillText("React");
         }}
         onMouseLeave={() => {
           defaultText();
         }}
       >
         <FontAwesomeIcon icon={faReact} size="1x" className="card-icon" />
+        <p>React</p>
       </div>
       <div
         className="card-wrapper"
@@ -85,6 +90,7 @@ function SkillCards({ skillText, defaultText }) {
         }}
       >
         <FontAwesomeIcon icon={faCogs} size="1x" className="card-icon" />
+        <p>APIs</p>
       </div>
       <div
         className="card-wrapper"
@@ -96,6 +102,7 @@ function SkillCards({ skillText, defaultText }) {
         }}
       >
         <FontAwesomeIcon icon={faCodeBranch} size="1x" className="card-icon" />
+        <p>Git & GitHub</p>
       </div>
 
       <div
@@ -108,6 +115,7 @@ function SkillCards({ skillText, defaultText }) {
         }}
       >
         <FontAwesomeIcon icon={faDatabase} size="1x" className="card-icon" />
+        <p>Databases</p>
       </div>
 
       <div
@@ -120,6 +128,7 @@ function SkillCards({ skillText, defaultText }) {
         }}
       >
         <FontAwesomeIcon icon={faNodeJs} size="1x" className="card-icon" />
+        <p>Node.js</p>
       </div>
       <div
         className="card-wrapper"
@@ -131,6 +140,7 @@ function SkillCards({ skillText, defaultText }) {
         }}
       >
         <FontAwesomeIcon icon={faUpload} size="1x" className="card-icon" />
+        <p>Deployment</p>
       </div>
 
       <div
@@ -143,6 +153,7 @@ function SkillCards({ skillText, defaultText }) {
         }}
       >
         <FontAwesomeIcon icon={faSearch} size="1x" className="card-icon" />
+        <p>SEO</p>
       </div>
 
       <div
@@ -155,6 +166,7 @@ function SkillCards({ skillText, defaultText }) {
         }}
       >
         <FontAwesomeIcon icon={faWordpress} size="1x" className="card-icon" />
+        <p>WordPress</p>
       </div>
     </div>
   );

@@ -23,7 +23,8 @@ function Skills() {
         );
         break;
 
-      case "Design Frameworks":
+      case "Design":
+        updateTitle("Design Frameworks");
         updateText(
           "I create applications and websites using Bootstrap, Semantic UI, styled-components, & Material UI."
         );
@@ -35,7 +36,8 @@ function Skills() {
         );
         break;
 
-      case "User Interfaces":
+      case "React":
+        updateTitle("User Interfaces");
         updateText(
           "I engineer engaging UIs using the React library with Redux & Hooks for state management."
         );
@@ -54,6 +56,7 @@ function Skills() {
         break;
 
       case "Databases":
+        updateTitle("SQL Databases");
         updateText(
           "I implement relational databases like SQLite and PostgreSQL to securely persist and deliver data."
         );
@@ -67,7 +70,7 @@ function Skills() {
 
       case "Deployment":
         updateText(
-          "I deploy sites and applications to Heroku, Netlify, or private servers, quickly making them accessible to end users."
+          "I deploy sites and applications to Heroku, Netlify, or private servers, quickly making them accessible for testing or end users."
         );
         break;
 
@@ -122,20 +125,20 @@ const SkillsWrapper = styled.section`
     }
     .card-wrapper {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       padding: 0 2rem;
+      /* color:  */
       &:hover {
-        color: #67a6b5;
-        text-shadow: 5px 5px 10px yellow;
+        color: #43697a;
+        font-weight: bold;
+        p {
+          text-shadow: 5px 5px 10px #43697a;
+        }
       }
-
       .card-icon {
         width: 4rem;
-      }
-
-      .fa-wordpress {
-        filter: drop-shadow(0 0 1px #777);
       }
     }
   }
