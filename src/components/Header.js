@@ -14,7 +14,7 @@ function Header() {
 export default Header;
 
 const HeaderWrapper = styled.header`
-  height: 600px;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

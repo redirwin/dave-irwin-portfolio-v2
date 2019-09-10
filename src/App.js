@@ -6,6 +6,7 @@ import Top from "./components/TopLink";
 import Header from "./components/Header";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <About />
       <Skills />
+      <Projects />
     </AppWrapper>
   );
 }

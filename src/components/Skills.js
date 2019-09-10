@@ -1,148 +1,103 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
-import {
-  faHtml5,
-  faCss3Alt,
-  faBootstrap,
-  faJsSquare,
-  faReact,
-  faNodeJs,
-  faWordpress
-} from "@fortawesome/free-brands-svg-icons";
-import {
-  faCogs,
-  faDatabase,
-  faCodeBranch,
-  faSearch,
-  faUpload
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import SkillModal from "./SkillModal";
+import SkillAbout from "./SkillAbout";
+import SkillCards from "./SkillCards";
 
 function Skills() {
+  const [title, updateTitle] = useState("");
+  const [text, updateText] = useState("");
+
+  function skillText(skill) {
+    updateTitle(skill);
+    switch (skill) {
+      case "HTML5":
+        updateText(
+          "I deliver well-structured, semantic frontends that are easily readable by humans and assistive devices."
+        );
+        break;
+
+      case "CSS3":
+        updateText(
+          "I design cleanly-styled and fully responsive applications with vanilla CSS, or using a CSS preprocessor such as SASS."
+        );
+        break;
+
+      case "Design Frameworks":
+        updateText(
+          "I create applications and websites using Bootstrap, Semantic UI, styled-components, & Material UI."
+        );
+        break;
+
+      case "JavaScript":
+        updateText(
+          "I build applications to the latest ECMAScript standards for efficient, interactive front ends."
+        );
+        break;
+
+      case "User Interfaces":
+        updateText(
+          "I engineer engaging UIs using the React library with Redux & Hooks for state management."
+        );
+        break;
+
+      case "REST APIs":
+        updateText(
+          "I create frontends that interface with and consume data from REST APIs, and I build flexible & secure APIs that provide data endpoints from the backend."
+        );
+        break;
+
+      case "Version Control":
+        updateText(
+          "I use Git & GitHub for smart version control to manage project tasks and effectively work with development teams."
+        );
+        break;
+
+      case "Databases":
+        updateText(
+          "I implement relational databases like SQLite and PostgreSQL to securely persist and deliver data."
+        );
+        break;
+
+      case "Node.js":
+        updateText(
+          "I deliver modern & scalable backends built on JavaScript for a simplified full-stack development experience."
+        );
+        break;
+
+      case "Deployment":
+        updateText(
+          "I deploy sites and applications to Heroku, Netlify, or private servers, quickly making them accessible to end users."
+        );
+        break;
+
+      case "SEO":
+        updateText(
+          "I combine smart on-page and off-page search engine optimization to get sites indexed and ranked."
+        );
+        break;
+
+      case "WordPress":
+        updateText(
+          "When a website or blog with limited customization is needed, I can quickly deliver high-quality WordPress sites."
+        );
+        break;
+
+      default:
+        break;
+    }
+  }
+
+  function defaultText() {
+    updateTitle("");
+    updateText("");
+  }
+
   return (
     <SkillsWrapper id="skills">
       <div className="internal-section-wrapper">
-        <h3>Skills</h3>
-        <div className="icons-wrapper">
-          <div className="skill-wrapper">
-            <FontAwesomeIcon icon={faHtml5} size="1x" className="card-icon" />
-            <SkillModal
-              title="HTML5"
-              text="I deliver well-structured, semantic frontends that are easily readable by humans and assistive devices."
-            />
-          </div>
-
-          <div className="skill-wrapper">
-            <FontAwesomeIcon icon={faCss3Alt} size="1x" className="card-icon" />
-            <SkillModal
-              title="CSS3"
-              text="I design cleanly-styled and fully responsive applications with vanilla CSS, or using a CSS preprocessor such as SASS."
-            />
-          </div>
-
-          <div className="skill-wrapper">
-            <FontAwesomeIcon
-              icon={faBootstrap}
-              size="1x"
-              className="card-icon"
-            />
-            <SkillModal
-              title="Design Frameworks"
-              text="I create applications and websites using Bootstrap, Semantic UI, styled-components, Material UI, and more."
-            />
-          </div>
-
-          <div className="skill-wrapper">
-            <FontAwesomeIcon
-              icon={faJsSquare}
-              size="1x"
-              className="card-icon"
-            />
-            <SkillModal
-              title="JavaScript"
-              text="I build applications to the latest ECMAScript standards for efficient, interactive front ends."
-            />
-          </div>
-
-          <div className="skill-wrapper">
-            <FontAwesomeIcon icon={faReact} size="1x" className="card-icon" />
-            <SkillModal
-              title="User Interfaces"
-              text="I engineer engaging UIs using the React library with Redux & Hooks for state management."
-            />
-          </div>
-
-          <div className="skill-wrapper">
-            <FontAwesomeIcon icon={faCogs} size="1x" className="card-icon" />
-            <SkillModal
-              title="REST APIs"
-              text="I create frontends that interface with and consume data from REST APIs, and I build flexible & secure APIs that provide data endpoints from the backend."
-            />
-          </div>
-
-          <div className="skill-wrapper">
-            <FontAwesomeIcon
-              icon={faCodeBranch}
-              size="1x"
-              className="card-icon"
-            />
-            <SkillModal
-              title="Version Control"
-              text="I use Git & GitHub for smart version control to manage project tasks and effectively work with development teams."
-            />
-          </div>
-
-          <div className="skill-wrapper">
-            <FontAwesomeIcon
-              icon={faDatabase}
-              size="1x"
-              className="card-icon"
-            />
-            <SkillModal
-              title="Databases"
-              text="I implement relational databases like SQLite and PostgreSQL to securely persist and deliver data."
-            />
-          </div>
-
-          <div className="skill-wrapper">
-            <FontAwesomeIcon icon={faNodeJs} size="1x" className="card-icon" />
-            <SkillModal
-              title="Node.js"
-              text="I deliver modern & scalable backends built on JavaScript for a simplified full-stack development experience."
-            />
-          </div>
-
-          <div className="skill-wrapper">
-            <FontAwesomeIcon icon={faUpload} size="1x" className="card-icon" />
-            <SkillModal
-              title="Deployment"
-              text="I deploy sites and applications to Heroku, Netlify, or private servers, quickly making them accessible to end users."
-            />
-          </div>
-
-          <div className="skill-wrapper">
-            <FontAwesomeIcon icon={faSearch} size="1x" className="card-icon" />
-            <SkillModal
-              title="SEO"
-              text="I combine smart on-page and off-page search engine optimization to get sites indexed and ranked."
-            />
-          </div>
-
-          <div className="skill-wrapper">
-            <FontAwesomeIcon
-              icon={faWordpress}
-              size="1x"
-              className="card-icon"
-            />
-            <SkillModal
-              title="WordPress"
-              text="When a website or blog with limited customization is needed, I can quickly deliver high-quality WordPress sites."
-            />
-          </div>
-        </div>
+        <SkillCards skillText={skillText} defaultText={defaultText} />
+        <SkillAbout title={title} text={text} />
       </div>
     </SkillsWrapper>
   );
@@ -151,29 +106,36 @@ function Skills() {
 export default Skills;
 
 const SkillsWrapper = styled.section`
-  width: 100%;
-  background-color: black;
-  .icons-wrapper {
+  .internal-section-wrapper {
+    margin-top: 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    .card-icon {
+    justify-content: space-between;
+    .icons-wrapper {
+      width: 65%;
       font-size: 5rem;
-      transition: color 0.1s;
+      text-align: center;
+      margin-left: -1.5rem;
+      margin-bottom: -1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .card-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 2rem;
       &:hover {
         color: #67a6b5;
+        text-shadow: 5px 5px 10px yellow;
       }
-    }
-    .modal {
-      display: none;
-    }
-  }
-  .skill-wrapper {
-    margin: 2rem;
-    padding: none;
-    &:hover {
-      .modal {
-        display: block;
+
+      .card-icon {
+        width: 4rem;
+      }
+
+      .fa-wordpress {
+        filter: drop-shadow(0 0 1px #777);
       }
     }
   }
