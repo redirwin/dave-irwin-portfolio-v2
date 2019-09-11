@@ -28,6 +28,7 @@ const TopLinkWrapper = styled.div`
     position: fixed;
     bottom: 1rem;
     right: 1rem;
+    z-index: 0;
     /* transform: rotate(-90deg); */
   }
 `;

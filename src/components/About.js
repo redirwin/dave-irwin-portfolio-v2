@@ -9,8 +9,9 @@ function About() {
         <p>
           Great developers aren't fairytales, but finding the knight in shining
           armor to help tackle your development dragons can feel like a hopeless
-          quest. With almost ten years of industry experience, I'd like to be
-          part of making your project a legendary success.
+          quest. I understand that, and with almost ten years of industry
+          experience, I'd like to be part of making your project a legendary
+          success.
         </p>
         <p>
           I'm Dave Irwin, a developer skilled in the mystic arts of front and
@@ -42,5 +43,8 @@ export default About;
 
 const AboutWrapper = styled.section`
   width: 100%;
+  height: 100vh;
+  display: flex;
+
   background-color: #223f52;
 `;

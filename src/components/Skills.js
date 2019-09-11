@@ -110,15 +110,26 @@ export default Skills;
 
 const SkillsWrapper = styled.section`
   .internal-section-wrapper {
+    @media (max-width: 1200px) {
+      width: 100vw;
+      padding: 0 5rem;
+    }
+    @media (max-width: 992px) {
+      width: 100vw;
+      padding: 0 2rem;
+    }
+    height: 100vh;
     margin-top: 0;
     display: flex;
     justify-content: space-between;
     .icons-wrapper {
       width: 65%;
+      height: 50vh;
       font-size: 5rem;
       text-align: center;
       margin-left: -1.5rem;
       margin-bottom: -1.5rem;
+      padding-top: 10vh;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -128,8 +139,8 @@ const SkillsWrapper = styled.section`
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 0 2rem;
-      /* color:  */
+      padding: 1rem 2rem;
+      /* border: 1px solid white; */
       &:hover {
         color: #43697a;
         font-weight: bold;
@@ -138,7 +149,7 @@ const SkillsWrapper = styled.section`
         }
       }
       .card-icon {
-        width: 4rem;
+        width: 3.5vw;
       }
     }
   }

@@ -32,6 +32,7 @@ const IntroWrapper = styled.div`
   width: 40%;
   padding: 2rem 2rem 1rem 2rem;
   background-color: rgba(0, 0, 0, 0.7);
+  /* background-color: rgba(34, 63, 82, 0.8); */
   color: white;
   @media (max-width: 992px) {
     width: 70%;

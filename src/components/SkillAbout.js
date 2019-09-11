@@ -20,6 +20,7 @@ export default SkillAbout;
 const SkillAboutWrapper = styled.section`
   width: 30%;
   height: 27rem;
+  padding-top: 10vh;
 
   h4 {
     line-height: 2rem;
