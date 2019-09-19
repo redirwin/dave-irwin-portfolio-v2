@@ -14,11 +14,11 @@ function ContactText() {
       <div className="phone method">
         <p>
           <a
-            href="tel:+1-303-499-7111"
+            href="tel:+1-928-224-0506"
             target="_blank"
             rel="noopener noreferrer"
           >
-            928.240.0781
+            928.224.0506
           </a>
         </p>
       </div>
